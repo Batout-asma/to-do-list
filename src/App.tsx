@@ -2,6 +2,7 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import TaskList from "./components/TaskList";
 import { Task } from "./types/types";
+import Footer from "./components/Footer";
 
 const App: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -77,6 +78,7 @@ const App: React.FC = () => {
             </p>
           )}
         </div>
+        <Footer></Footer>
       </div>
     </>
   );
