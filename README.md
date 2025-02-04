@@ -1,50 +1,48 @@
-# React + TypeScript + Vite
+# To-Do List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient To-Do List application built with React, TypeScript, Vite, and Tailwind CSS. This project provides a modern, fast, and minimalistic user experience to manage daily tasks efficiently.
 
-Currently, two official plugins are available:
+## 📷 Preview
+![image](https://github.com/user-attachments/assets/8248e089-d3ea-4e70-b845-702e82db31b2)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- ✅ Add, edit, and delete tasks
+- 📌 Mark tasks as completed
+- 🎨 Responsive and clean UI with Tailwind CSS
+- ⚡ Lightning-fast performance with Vite
+- 🔧 Type safety with TypeScript
+- 🔄 Hot Module Replacement (HMR) enabled
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - A strongly typed programming language that builds on JavaScript
+- [Vite](https://vitejs.dev/) - A next-generation frontend tooling for fast builds and HMR
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework for rapid UI development
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 📦 Installation & Setup
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+1. Clone the repository:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```sh
+   git clone https://github.com/batout-asma/to-do-list.git
+   cd to-do-list
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+2. Install dependencies:
+
+   ```sh
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```sh
+   npm run dev
+   ```
+
+4. Open the app in your browser at `http://localhost:5173/`
+
+Made with ❤️ by [Batout Asma](https://github.com/batout-asma).
+
