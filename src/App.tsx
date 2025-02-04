@@ -44,7 +44,7 @@ const App: React.FC = () => {
           setTasks([]);
         }}
       />
-      <main className="flex-grow flex flex-col items-center w-full p-5">
+      <div className="flex-grow flex flex-col items-center w-full p-5">
         <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-5 text-white animate-glow">
           Welcome to Batout's To Do List
         </h1>
@@ -78,7 +78,7 @@ const App: React.FC = () => {
             </p>
           )}
         </div>
-      </main>
+      </div>
       <Footer />
     </div>
   );
