@@ -11,14 +11,14 @@ const Footer = () => {
         <Github className="w-6 h-6 hover:text-gray-400 transition" />
       </a>
       <a
-        href="https://t.me/yourtelegram"
+        href="https://t.me/Batoutiva_o"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Send className="w-6 h-6 hover:text-gray-400 transition" />
       </a>
       <a
-        href="https://yourwebsite.com"
+        href="https://github.com/Batout-asma/to-do-list"
         target="_blank"
         rel="noopener noreferrer"
       >
