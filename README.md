@@ -3,6 +3,7 @@
 A simple and efficient To-Do List application built with React, TypeScript, Vite, and Tailwind CSS. This project provides a modern, fast, and minimalistic user experience to manage daily tasks efficiently.
 
 ## 📷 Preview
+![image](https://github.com/user-attachments/assets/8248e089-d3ea-4e70-b845-702e82db31b2)
 
 ## 🚀 Features
 
