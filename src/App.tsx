@@ -38,13 +38,13 @@ const App: React.FC = () => {
   };
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Navbar
         onClear={function (): void {
           setTasks([]);
         }}
       />
-      <div className="min-h-screen flex flex-col items-center w-full p-5 ">
+      <main className="flex-grow flex flex-col items-center w-full p-5">
         <h1 className="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-5 text-white animate-glow">
           Welcome to Batout's To Do List
         </h1>
@@ -78,9 +78,9 @@ const App: React.FC = () => {
             </p>
           )}
         </div>
-        <Footer></Footer>
-      </div>
-    </>
+      </main>
+      <Footer />
+    </div>
   );
 };
 
