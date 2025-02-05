@@ -15,6 +15,7 @@ async function main() {
     console.error(e);
   } finally {
     await client.close();
+    console.log("Connection closed");
   }
 }
 
