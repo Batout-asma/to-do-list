@@ -10,11 +10,14 @@ const App: React.FC = () => {
 
   const addTask = () => {
     if (!taskText.trim()) return;
-    setTasks([...tasks, { id: Date.now(), text: taskText, completed: false }]);
+    setTasks([
+      ...tasks,
+      { id: String(Date.now()), text: taskText, completed: false },
+    ]);
     setTaskText("");
   };
 
-  const toggleTask = (id: number) => {
+  const toggleTask = (id: string) => {
     setTasks(
       tasks.map((task) =>
         task.id === id ? { ...task, completed: !task.completed } : task
@@ -22,11 +25,11 @@ const App: React.FC = () => {
     );
   };
 
-  const deleteTask = (id: number) => {
+  const deleteTask = (id: string) => {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  const editTask = (id: number) => {
+  const editTask = (id: string) => {
     const newText = prompt("Edit Task:");
     if (newText) {
       setTasks(
