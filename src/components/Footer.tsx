@@ -8,21 +8,21 @@ const Footer = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Github className="w-6 h-6 hover:text-gray-400 transition" />
+        <Github className="w-6 h-6 hover:text-green-500 transition" />
       </a>
       <a
         href="https://t.me/Batoutiva_o"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Send className="w-6 h-6 hover:text-gray-400 transition" />
+        <Send className="w-6 h-6 hover:text-green-400 transition" />
       </a>
       <a
         href="https://github.com/Batout-asma/to-do-list"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Code className="w-6 h-6 hover:text-gray-400 transition" />
+        <Code className="w-6 h-6 hover:text-green-400 transition" />
       </a>
     </footer>
   );
