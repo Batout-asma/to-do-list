@@ -57,6 +57,11 @@ const App: React.FC = () => {
               type="text"
               value={taskText}
               onChange={(e) => setTaskText(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  addTask();
+                }
+              }}
               placeholder="Enter task..."
               className="flex-1 p-2 border rounded bg-white border-gray-400"
             />
