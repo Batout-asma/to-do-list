@@ -15,7 +15,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
   onEdit,
 }) => {
   return (
-    <div className="flex items-center justify-between bg-gray-100 p-3 rounded-lg shadow-lg">
+    <div className="flex items-center justify-between bg-gray-50 p-4 rounded-lg shadow-xl">
       <span
         className={`flex-1  ${
           task.completed ? "line-through text-green-500" : ""
