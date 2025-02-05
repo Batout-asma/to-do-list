@@ -7,7 +7,7 @@ const Navbar = ({ onClear }: { onClear: () => void }) => {
 
       <button
         onClick={onClear}
-        className="px-3 py-1 border border-red-500 rounded-md hover:text-red-500 transition"
+        className="px-3 py-1 text-red-500 border border-red-500 rounded-md hover:text-white hover:bg-red-500 transition"
       >
         Clear
       </button>

@@ -16,6 +16,12 @@ const TaskItem: React.FC<TaskItemProps> = ({
 }) => {
   return (
     <div className="flex items-center justify-between bg-gray-50 p-4 rounded-lg shadow-xl">
+      <input
+        type="checkbox"
+        checked={task.completed}
+        onChange={() => onToggle(task.id)}
+        className="mr-2"
+      />
       <span
         className={`flex-1  ${
           task.completed ? "line-through text-green-500" : ""
@@ -23,12 +29,7 @@ const TaskItem: React.FC<TaskItemProps> = ({
       >
         {task.text}
       </span>
-      <input
-        type="checkbox"
-        checked={task.completed}
-        onChange={() => onToggle(task.id)}
-        className="mr-2"
-      />
+
       <button onClick={() => onEdit(task.id)} className="text-green-500 px-2">
         <FaEdit size={20} />
       </button>
