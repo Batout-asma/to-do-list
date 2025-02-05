@@ -2,7 +2,7 @@ import { Github, Send, Code } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-4 border-t border-green-500 text-white flex justify-center gap-6">
+    <footer className="w-full mt-5 py-4 border-t border-green-500 text-white flex justify-center gap-6">
       <a
         href="https://github.com/batout-asma"
         target="_blank"
